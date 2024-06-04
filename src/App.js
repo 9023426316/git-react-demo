@@ -2,6 +2,7 @@
 import './App.css';
 import img1 from './images/img-1.jpg'
 
+let name="SIT";
 function App() {
   return (
     <>
@@ -20,6 +21,8 @@ function App() {
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrKHPsvNDJHY9tWpkHrfkfo8Dkf0LvZU3Hdg&s" className="image-1" alt=""  />
       <br></br>
       <img src={img1} alt="" className="image-2" />
+      <h1>{name}</h1>
+
     </header>
       </>
   );
