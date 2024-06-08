@@ -32,7 +32,7 @@ export default function TextForm(props) {
 
     const handleCopy = () => {
       var newText = document.getElementById('exampleFormControlTextarea1');
-      newText.ariaSelected();
+      newText.select();
       navigator.clipboard.writeText(newText.value);
     }
     
