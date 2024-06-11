@@ -37,7 +37,7 @@ export default function TextForm(props) {
     }
     
     const handleRemoveSpace = () => {
-      let newText = text.split(/[] + /);
+      let newText = text.split(/ []+ /);
       setText(newText.join(""));
     }
 
@@ -50,11 +50,11 @@ export default function TextForm(props) {
 
   <button className='btn btn-outline-secondary my-3 mx-3' onClick={handleUpchange}>Convert to lower btn</button>
 
-  <button className='btn btn-outline-success my-3' onClick={handlespeak}>speak</button>
+  <button className='btn btn-outline-success my-3 mx-3' onClick={handlespeak}>speak</button>
 
-  <button className='btn btn-outline-success my-3 ' onClick={handleclear}>Clear</button>
+  <button className='btn btn-outline-success my-3 mx-3' onClick={handleclear}>Clear</button>
 
-  <button className='btn btn-outline-success my-3 ' onClick={handleCopy}>Copy</button>
+  <button className='btn btn-outline-success my-3 mx-3' onClick={handleCopy}>Copy</button>
 
   <button className='btn btn-outline-success my-3 ' onClick={handleRemoveSpace}>Remove Space</button>
 
