@@ -12,10 +12,19 @@ function App() {
   const [mode, setmode] = useState('light');
 
   const [btntext, setbtntext] = useState('Enable To DarkMode');
+
+  const toggleMode = () => {
+    if (mode === light) {
+      setmode="dark";
+      document.body.style.background="light";
+      document.body.style.color="dark";
+      
+    }
+  }
   return (
     <>
-    <Navbar heading="SIT" />
-    <TextForm heading="AboutUs">mode{mode},btntext{btntext}</TextForm>
+    <Navbar heading="SIT" mode={mode} btntext={btntext} toggleMode={toggleMode}/>
+    <TextForm heading="AboutUs"  mode={mode} btntext={btntext} toggleMode={toggleMode}></TextForm>
     <AboutUs />
       </>
   );
