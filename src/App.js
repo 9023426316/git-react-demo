@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-    <Navbar heading="SIT" mode={mode} btntext={btntext} toggleMode={toggleMode}/>
+    <Navbar heading="SIT" mode={mode} btntext={btntext} toggleMode={toggleMode}></Navbar>
     <TextForm heading="AboutUs"  mode={mode} btntext={btntext} toggleMode={toggleMode}></TextForm>
     <AboutUs />
       </>
