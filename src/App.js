@@ -14,13 +14,19 @@ function App() {
   const [btntext, setbtntext] = useState('Enable To DarkMode');
 
   const toggleMode = () => {
-    if (mode === light) {
-      setmode="dark";
-      document.body.style.background="light";
-      document.body.style.color="dark";
-      
+    if (mode === 'light') {
+      setMode('dark')
+      document.body.style.background = 'black'
+      document.body.style.color= 'white'
+      newbtnText('Enable to Dark Mode')
+    } else {
+      setMode('light')
+      document.body.style.background = 'white'
+      document.body.style.color = 'black'
+      newbtnText('Enable to Light Mode')
     }
   }
+
   return (
     <>
     <Navbar heading="SIT" mode={mode} btntext={btntext} toggleMode={toggleMode}/>
