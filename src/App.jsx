@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
-
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 
 function App() {
@@ -52,8 +52,9 @@ function App() {
   return (
     <>
       <Navbar title="SIT" aboutText="Prince" mode={mode} toggleMode={toggleMode} btntext={btnText}></Navbar>
-      <Alert alert={alert}/>
-      <TextForm heading="Intexr Text to Analyse Below" mode={mode} toggleMode={toggleMode} showAlert={showAlert}></TextForm>
+      {/* <Alert alert={alert}/>
+      <TextForm heading="Intexr Text to Analyse Below" mode={mode} toggleMode={toggleMode} showAlert={showAlert}></TextForm> */}
+      <PrivacyPolicy heading="privacy policy"></PrivacyPolicy>
     </>
   );
 }
